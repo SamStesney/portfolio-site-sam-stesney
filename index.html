@@ -2,6 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="stylesheet" href="https://use.typekit.net/onv3zlm.css"><!-- futura -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"><!-- Oswald -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"><!-- normalize -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
   <title>Sam Stesney - NYC Based User Interface Designer</title>
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -11,12 +15,16 @@
   <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
     <div>
-      <img src="img/logo-tiny.png" alt="Sam Stesney logo">
+      <picture>
+        <source src="img/logo-tiny.png" media="(max-width:767px)">
+        <img src="img/logo-tiny.png" alt="Sam Stesney Designs Logo">
+      </picture>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -26,24 +34,24 @@
       </nav>
     </div>
   </header>
-  <main>
-    <div><!-- hero -->
+  <main class="index">
+    <div id="hero"><!-- hero -->
       <div>
-        <h1>Hi, I’m Sam! I am a UI/UX designer on a mission to eliminate the question “Why would they do that?”</span></h1>
+        <h2 class="index">Hi, I’m Sam! I am a UI/UX designer on a mission to eliminate the question “Why would they do that?”</span></h2>
       </div>
     </div><!-- hero -->
     <div>
       <div id="work"><!-- recent work section -->
-        <h2>Recent Projects</h2>
+        <h1 class="index">Recent Work</h1>
         <div>
           <div>
             <picture>
               <source srcset="img/home-images/cache-thumbnail.jpg" media="(max-width:767px)">
-              <img src="img/home-images/cache-thumbnail.jpg" alt="Cache Thumbnail">
+              <img class="thumbnail" src="img/home-images/cache-thumbnail.jpg" alt="Cache Thumbnail">
             </picture>
-            <h2>Cache</h2>
-            <p>Money saving application designed to help users save for a big expenditure with ease.</p>
-            <a href="cache-case-study.html">View case study</a>
+            <h3 class="index">Cache</h3>
+            <p class="a">Money saving application designed to help users save for a big expenditure with ease.</p>
+            <a href="cache-case-study.html" class="button">View case study</a>
           </div>
           <br>
           <br>
@@ -51,26 +59,26 @@
           <div>
             <picture>
               <source srcset="img/home-images/lookbook-thumbnail.jpg" media="(max-width:767px)">
-              <img src="img/home-images/lookbook-thumbnail.jpg" alt="LookBook Thumbnail">
+              <img class="thumbnail" src="img/home-images/lookbook-thumbnail.jpg" alt="LookBook Thumbnail">
             </picture>
-            <h2>LookBook</h2>
-            <p>The one-and-only responsive web app that connects photographers and models any time, any place.</p>
-            <a href="">View case study</a>
+            <h3 class="index">LookBook</h3>
+            <p class="a">The one-and-only responsive web app that connects photographers and models any time, any place.</p>
+            <a href="#" class="button">View case study</a>
           </div>
         </div>
       </div><!-- recent work section -->
       <br>
       <div id="contact"><!-- contact section -->
-        <h2>Want to know more?</h2>
-        <p>
+        <h1 class="index">Want to know more?</h1>
+        <p class="a">
           I'm currently available for freelance and full-time work in the New York City area, as well as for
           remote work. If you think I might be a good fit for your team and would like to know more about me,
-          you can find me on LinkedIn or you can <a href="mailto:samstesney@gmail.com">email</a> me directly at samstesney@gmail.com.
+          you can find me on LinkedIn or you can <a href="mailto:samstesney@gmail.com" class="hyperlink">email</a> me directly at samstesney@gmail.com.
         </p>
-        <a href="img/stesney-samuel-ui-design-resume.pdf" target="_blank" download>Check out my resume</a>
+        <a href="img/stesney-samuel-ui-design-resume.pdf" class="button" target="_blank" download>Check out my resume</a>
         <br>
         <br>
-        <h3>Other ways to get in touch</h3>
+        <h3 class="index">Other ways to get in touch</h3>
         <ul>
           <li>
             <?xml version="1.0" ?><svg height="500" id="svg2" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -88,7 +96,7 @@
                   id="rect2989-1-7" style="fill:#ffffff;fill-opacity:1;stroke:none" />
               </g>
             </svg>
-            <a href="">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/samuelstesney/" class="hyperlink" target="_blank">LinkedIn</a>
           </li>
           <li>
             <?xml version="1.0" ?>
@@ -97,7 +105,7 @@
               <path
                 d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm174.73,309.405c0.803,-12.096 -0.183,-23.644 -2.983,-34.703c-2.825,-11.076 -7.356,-20.951 -13.702,-29.583c-6.354,-8.649 -14.448,-15.558 -24.306,-20.661c-9.908,-5.17 -21.448,-7.705 -34.637,-7.705c-11.946,0 -22.732,2.121 -32.516,6.338c-9.775,4.241 -18.167,10.04 -25.25,17.388c-7.067,7.307 -12.451,16.022 -16.328,26.121c-3.811,10.065 -5.758,20.951 -5.758,32.607c0,12.053 1.872,23.179 5.592,33.228c3.761,10.099 9.038,18.698 15.831,25.971c6.976,7.249 15.26,12.8 25.176,16.768c9.925,3.91 20.976,5.898 33.253,5.898c17.621,0 32.732,-4.034 45.133,-12.128c12.551,-8.069 21.738,-21.465 27.802,-40.229l-37.71,0c-1.458,4.822 -5.236,9.469 -11.44,13.819c-6.263,4.357 -13.719,6.536 -22.351,6.536c-12.013,0 -21.283,-3.148 -27.703,-9.411c-6.429,-6.263 -10.587,-17.927 -10.587,-30.254l112.484,0Zm-245.398,67.633c9.661,0 19.079,-1.218 28.15,-3.621c9.179,-2.41 17.356,-6.122 24.489,-11.167c7.075,-5.004 12.816,-11.49 17.032,-19.493c4.184,-7.911 6.271,-17.306 6.271,-28.224c0,-13.471 -3.206,-24.953 -9.742,-34.554c-6.503,-9.535 -16.328,-16.237 -29.558,-20.048c9.717,-4.606 16.999,-10.529 21.953,-17.753c4.929,-7.241 7.381,-16.296 7.381,-27.131c0,-10.016 -1.648,-18.491 -4.92,-25.259c-3.364,-6.868 -8.061,-12.319 -14.059,-16.42c-6.097,-4.1 -13.296,-7.091 -21.746,-8.88c-8.492,-1.848 -17.786,-2.734 -28.084,-2.734l-101.499,0l0,215.284l104.332,0Zm-5.401,-95.949c10.198,0 18.491,2.345 24.72,7.067c6.205,4.78 9.337,12.666 9.337,23.759c0,5.658 -0.92,10.347 -2.834,13.959c-1.905,3.628 -4.539,6.495 -7.704,8.582c-3.181,2.171 -6.934,3.645 -11.175,4.565c-4.176,0.936 -8.616,1.35 -13.28,1.35l-50.601,0l0,-59.282l51.537,0Zm198.102,-23.337c-5.095,-5.625 -13.702,-8.673 -24.215,-8.673c-6.843,0 -12.501,1.151 -17.041,3.495c-4.44,2.32 -8.068,5.195 -10.844,8.591c-2.767,3.447 -4.639,7.092 -5.741,10.985c-1.093,3.794 -1.756,7.232 -1.946,10.273l69.654,0c-1.019,-10.919 -4.755,-18.996 -9.867,-24.671Zm-205.284,-59.324c4.2,0 8.284,0.299 12.194,1.061c3.968,0.687 7.398,1.947 10.43,3.777c3.049,1.765 5.476,4.275 7.307,7.489c1.764,3.215 2.634,7.357 2.634,12.361c0,9.029 -2.634,15.599 -8.085,19.584c-5.509,4.042 -12.468,6.031 -20.86,6.031l-47.975,0l0,-50.303l44.355,0Zm223.998,-0.985l0,-21.241l-87.266,0l0,21.241l87.266,0Z" />
             </svg>
-            <a href="">Behance</a>
+            <a href="https://www.behance.net/samstesney" class="hyperlink" target="_blank">Behance</a>
           </li>
       </div><!-- contact section -->
     </div>
