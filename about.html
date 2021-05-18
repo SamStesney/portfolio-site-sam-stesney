@@ -2,6 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="stylesheet" href="https://use.typekit.net/onv3zlm.css"><!-- futura -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"><!-- Oswald -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"><!-- normalize -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
   <title>Get to Know Sam Stesney, UI Desinger</title>
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -11,12 +15,16 @@
   <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="about">
   <header>
-    <div>
-      <img src="img/logo-tiny.png" alt="Sam Stesney logo">
+    <div class="container">
+      <picture>
+        <source class="logo" src="img/logo-tiny.png" media="(max-width:767px)">
+        <img class="logo" src="img/logo-tiny.png" alt="Sam Stesney Designs Logo">
+      </picture>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -27,9 +35,9 @@
     </div>
   </header>
   <main>
-    <div>
+    <div class="container">
       <div>
-        <h1>Get to know me</h1>
+        <h1 class="main">Get to know me</h1>
       </div>
       <div>
         <picture>
@@ -38,7 +46,7 @@
         </picture>
         <div>
           <div>
-            <h2>My Story</h2>
+            <h2 class="main">My Story</h2>
             <p>
               Hi, I'm Sam Stesney. I'm a UI/UX designer based in NYC, though I welcome
               the opportunity to work with creatives from all over. My love of UI design
@@ -51,7 +59,7 @@
               to design websites, marketing materials and branding resources for several small
               businesses as well as to assist in website redesigns and social media footprint
               improvements. 
-            </P>
+            </p>
             <p>
               The fact that I'm a visual person has made me the perfect fit for this industry.
               I notice the finer details when I'm looking at a product or watching something.
@@ -71,12 +79,12 @@
             <p>
               Clearly, I'm all about seeing projects through from start to finish—and I love to make that
               happen in collaboration with a close-knit team. I'm open to freelance and full-time UI/UX work.
-              If you'd like to chat, please feel free to <a href="">get in touch!</a>
+              If you'd like to chat, please feel free to <a class="hyperlink" href="">get in touch!</a>
             </p>
-            <a href="img/stesney-samuel-ui-design-resume.pdf" target="_blank" download>Check out my resume</a>
+            <a class="button" href="img/stesney-samuel-ui-design-resume.pdf" target="_blank" download>Check out my resume</a>
           </div>
-          <h2>Skills & Tools</h2>
-          <h3>Relevant Skills</h3>
+          <h2 class="main">Skills & Tools</h2>
+          <h3 class="main">Relevant Skills</h3>
           <ul>
             <li>Wireframing</li>
             <li>Prototyping</li>
@@ -90,7 +98,7 @@
             <li>Usability testing</li>
           </ul>
           <div>
-            <h3>Tools I use</h3>
+            <h3 class="main">Tools I use</h3>
             <ul>
               <li>Adobe XD</li>
               <li>Figma</li>
@@ -101,14 +109,13 @@
             </ul>
           </div>
           <div>
-            <p>If you would like to know more about me or you think I sound like a good fit for your project, feel free to send me an <a href=mailto:samstesney@gmail.com">email</a> or check out other <a href="index.html#contact">contact</a> avenues!
+            <p>If you would like to know more about me or you think I sound like a good fit for your project, feel free to send me an <a class="hyperlink" href=mailto:samstesney@gmail.com>email</a> or check out other <a class="hyperlink" href="index.html#contact">contact</a> avenues!
             </p>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <br>
   <footer>
     <div>© 2021 by Samuel Stesney</div>
   </footer>
