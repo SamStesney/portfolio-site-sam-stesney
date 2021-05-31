@@ -2,7 +2,7 @@ body.index {
   background-color: #ffffff;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   line-height: 1.3;
 }
@@ -11,7 +11,7 @@ body.about {
   background-color: #ffffff;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   line-height: 1.3;
 }
@@ -20,7 +20,7 @@ body.cache-study {
   background-color: #ffffff;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   line-height: 1.4;
 }
@@ -211,8 +211,20 @@ Medium devices (640px and larger)
     padding-top: 100px;
   }
 
+  #hero span {
+    display: block;
+  }
+
+  .about h3 {
+    margin-top: 0px;
+  }
+
   .col-md-6 {
-    width: 100;
+    width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
   }
 
   [class*="col-"] {
@@ -222,6 +234,55 @@ Medium devices (640px and larger)
   .row::after {
     content: "";
     clear: both;
-    +display: table;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px and larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  body.index {
+    font-size: 20px;
+  }
+
+  body.about {
+    font-size: 20px;
+  }
+
+  body.cache-study {
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  [class*="col-lg-"] {
+    float: left;
+    padding: 0 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
