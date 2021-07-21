@@ -36,25 +36,53 @@ header {
   position: fixed;
   width: 100%;
   margin-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 10px;
   display: inline-block;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 .logo {
   max-width: 50px;
+  float: left;
+}
+
+.icon {
+  color: black;
+  float: right;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 28px;
+  padding-right: 0px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  text-align: right;
+  padding-top: 60px;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -166,7 +194,7 @@ h3.cache {
   line-height: 1.4;
 }
 
-#p1-main {
+.p1-main {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -222,6 +250,10 @@ img {
 .hyperlink:visited {
   color: #2D93AD;
   font-weight: 500;
+}
+
+.icon.responsive:visited {
+  color: black;
 }
 
 .hyperlink:hover,
@@ -336,9 +368,27 @@ Medium devices (640px and larger)
     text-align: unset;
   }
 
+  .logo {
+    max-width: 50px;
+    float: left;
+    margin-top: 20px;
+  }
   nav {
     width: auto;
     float: right;
+    padding-top: 20px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+  nav>ul>li {
+    display: inline-block;
   }
 
   body.index {
@@ -364,7 +414,7 @@ Medium devices (640px and larger)
     line-height: 1.4;
   }
 
-  #p1-main {
+  .p1-main {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -502,7 +552,7 @@ Large devices (1024px and larger)
     line-height: 1.3;
   }
 
-  #p1-main {
+  .p1-main {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-size: 20px;

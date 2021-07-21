@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"><!-- Oswald -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"><!-- normalize -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/40493e0495.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <title>Sam Stesney - NYC Based User Interface Designer</title>
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -21,17 +22,20 @@
 <body class="index">
   <header>
     <div class="container">
-      <picture>
-        <source class="logo" src="img/logo-tiny.png" media="(max-width:767px)">
-        <img class="logo" src="img/logo-tiny.png" alt="Sam Stesney Designs Logo">
-      </picture>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <picture>
+          <source class="logo" src="img/logo-tiny.png" media="(max-width:767px)">
+          <img class="logo" src="img/logo-tiny.png" alt="Sam Stesney Designs Logo">
+        </picture>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -53,7 +57,7 @@
             <img class="thumbnail" src="img/home-images/cache-thumbnail.jpg" alt="Cache Thumbnail">
           </picture>
           <h3 class="main">Cache</h3>
-          <p id="p1-main">Money saving application designed to help users save for a big expenditure with ease.</p>
+          <p class="p1-main">Money saving application designed to help users save for a big expenditure with ease.</p>
           <div class="button-container">
             <a href="cache-case-study.html" class="button">View case study</a>
           </div>
@@ -64,7 +68,7 @@
             <img class="thumbnail" src="img/home-images/lookbook-thumbnail.jpg" alt="LookBook Thumbnail">
           </picture>
           <h3 class="main">LookBook</h3>
-          <p id="p1-main">The one-and-only responsive web app that connects photographers and models any time, any place.</p>
+          <p class="p1-main">The one-and-only responsive web app that connects photographers and models any time, any place.</p>
           <div class="button-container">
             <a href="#" class="button">View case study</a>
           </div>
@@ -1007,11 +1011,11 @@
             </g>
           </svg>
           <h3 class="main">Animation Practice</h3>
-          <p id="p1-main">Going to make the best animation you've ever seen</p>
+          <p class="p1-main">Going to make the best animation you've ever seen</p>
         </div>
       </div><!-- recent work section -->
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <!-- contact section -->
       <div class="container">
         <h1 class="main">Want to know more?</h1>
