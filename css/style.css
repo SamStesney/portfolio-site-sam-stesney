@@ -252,10 +252,6 @@ img {
   font-weight: 500;
 }
 
-.icon.responsive:visited {
-  color: black;
-}
-
 .hyperlink:hover,
 .hyperlink:focus {
   color: #4DB7D1;
