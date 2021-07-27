@@ -365,7 +365,7 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 50px;
+    max-width: 60px;
     float: left;
     margin-top: 20px;
   }
@@ -529,6 +529,11 @@ Large devices (1024px and larger)
     font-size: 18px;
     line-height: 1.4;
   }
+
+ .logo {
+   max-width: 75px;
+   margin-bottom: 10px;
+ }
 
   main {
     padding-top: 100px;
