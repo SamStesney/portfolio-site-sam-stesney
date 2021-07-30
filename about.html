@@ -23,10 +23,12 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <picture>
-          <source class="logo" src="img/logo-tiny.png" media="(max-width:767px)">
-          <img class="logo" src="img/logo-tiny.png" alt="Sam Stesney Designs Logo">
-        </picture>
+        <a href="index.html">
+          <picture>
+            <source class="logo" srcset="img/logo-tiny.png" media="(max-width:767px)">
+            <img class="logo" src="img/logo-tiny.png" alt="Sam Stesney Designs Logo">
+          </picture>
+        </a>
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
@@ -34,7 +36,8 @@
             <li><a href="index.html#contact">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -44,9 +47,9 @@
       </div>
       <div class="my-story-grid-container">
         <div class="my-story1">
-          <picture>
-            <source id="headshot" srcset="img/home-images/headshot-small.jpg" media="(max-width:767px)">
-            <img id="headshot" src="img/home-images/headshot-small.jpg" alt="Sam Stesney headshot">
+          <picture id="headshot">
+            <source srcset="img/home-images/headshot-small.jpg" media="(max-width:767px)">
+            <img src="img/home-images/headshot-small.jpg" alt="Sam Stesney headshot">
           </picture>
         </div>
         <div class="my-story2">
@@ -133,7 +136,6 @@
       <p>If you would like to know more about me or you think I sound like a good fit for your project, feel free to send me an <a class="hyperlink" href="mailto:samstesney@gmail.com">email</a> or check out other <a class="hyperlink"
           href="index.html#contact">contact</a> avenues!
       </p>
-    </div>
     </div>
   </main>
   <footer>

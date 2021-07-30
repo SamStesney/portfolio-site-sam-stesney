@@ -25,8 +25,15 @@ body.cache-study {
   line-height: 1.4;
 }
 
+body.lookbook-study  {
+  background-color: #ffffff;
+  font-family: 'Bahnschrift', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+
 header {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -41,7 +48,7 @@ header {
 }
 
 main {
-  padding-top: 56px;
+  padding-top: 66.125px;
 }
 
 .logo {
@@ -269,6 +276,13 @@ img {
   margin: 25px 0;
 }
 
+.cache-logo-banner {
+  display: grid;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
 .cache-screens-grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -278,6 +292,12 @@ img {
 
 .cache-final-screens {
   max-width: 262.5px;
+}
+
+.cache-gifs {
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom-nav>ul {
@@ -295,65 +315,105 @@ img {
   font-weight: 500;
 }
 
-#cache-project-overview {
+#cache-present, #cache-ideate, #cache-project-overview {
   background-color: #e8f5ff;
   padding-top: 10px;
 }
+/* ===== LookBook ==============*/
+.h1-lookbook {
+  font-family: 'anton', sans-serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  line-height: 1.6;
+  font-weight: 400;
+}
 
-#cache-ideate {
-  background-color: #e8f5ff;
+.h3-lookbook {
+  font-family: 'anton', sans-serif;
+  font-size: 16px;
+  letter-spacing: normal;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.p2-lookbook {
+  font-size: 16px;
+}
+
+#lookbook-info {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+#lookbook-platform {
+  text-align: right;
+}
+
+.lookbook-section-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.lookbook-grey {
+  background-color: #ededed;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lookbook-logo-banner {
+  display: block;
+  max-width: 243px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 10px;
 }
 
-#cache-present {
-  background-color: #e8f5ff;
-  padding-top: 10px;
+.mid-fi-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 2px;
 }
 
-@keyframes color-change {
-  from {
-    fill: #edc655
-  }
-
-  to {
-    fill: #f76414
-  }
+.lookbook-final-screens-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
 }
 
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
+.lookbook-booking-showcase {
+  grid-area: 3/1/4/3;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
+.lookbook-buttons-image, .lookbook-fonts-image, .lookbook-iconography-image {
+  padding-top: 15px;
 }
 
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+#lookbook-intro, #lookbook-final-showcase {
+  background-color: #323b47;
+  color: #ededed;
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+#lookbook-tagline>h1 {
+  text-align: center;
 }
 
-.cloud-back {
-  animation: 30s cloud-move-reverse infinite alternate linear;
+.lookbook-showcase-text {
+  text-align: center;
+}
+
+.lookbook-gif {
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px
+}
+
+#lookbook-4-size-screen-mockup, #lookbook-live-mockup {
+  padding-top: 20px;
 }
 
 /* ==============================
@@ -381,37 +441,29 @@ Medium devices (640px and larger)
 
   .navtoggle li:last-child {
   display: none;
-}
+  }
 
   nav>ul>li {
     display: inline-block;
   }
 
   body.index {
-    background-color: #ffffff;
-    font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-size: 20px;
   }
 
   body.about {
-    background-color: #ffffff;
-    font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-size: 20px;
   }
 
   body.cache-study {
-    background-color: #ffffff;
-    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    font-style: normal;
     line-height: 1.4;
   }
 
   .p1-main {
-    font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-size: 20px;
   }
@@ -451,6 +503,10 @@ Medium devices (640px and larger)
     max-width: 262.5px;
   }
 
+  .cache-gifs {
+    max-width: 260px;
+    padding-bottom: 35px;
+  }
   .col-md-6 {
     width: 50%;
   }
@@ -461,6 +517,71 @@ Medium devices (640px and larger)
 
   [class*="-grid-container"] {
     padding-bottom: 35px;
+  }
+
+/* ===== LookBook ==============*/
+
+  .h1-lookbook {
+    font-size: 32px;
+  }
+
+  .lookbook-section-text {
+    font-size: 18px;
+  }
+
+  .lookbook-logo-banner {
+    max-width: 384px
+  }
+
+  .lookbook-70 {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mid-fi-grid-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lookbook-buttons-image, .lookbook-fonts-image, .lookbook-iconography-image {
+    padding-top: 50px;
+  }
+
+  .lookbook-final-screens-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lookbook-booking-showcase {
+    grid-area: 2/3/3/4;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lookbook-gif {
+    max-width: 260px;
+    padding-bottom: 50px;
+  }
+
+  #lookbook-4-size-screen-mockup, #lookbook-live-mockup {
+    padding-top: 50px;
+  }
+
+  .lookbook-final-mockups {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lookbook-logo-banner {
+    max-width: 243px;
   }
 
   /* About */
@@ -498,22 +619,12 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-
 }
 
 /* ==============================
 Large devices (1024px and larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-  }
-
   body.index {
     font-size: 24px;
   }
@@ -523,8 +634,6 @@ Large devices (1024px and larger)
   }
 
   body.cache-study {
-    background-color: #ffffff;
-    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.4;
@@ -536,25 +645,22 @@ Large devices (1024px and larger)
  }
 
   main {
-    padding-top: 100px;
+    padding-top: 100.2px;
   }
 
   h1.main {
-    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 60px;
     line-height: 1.3;
   }
 
   h2.main {
-    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 48px;
     line-height: 1.3;
   }
 
   .p1-main {
-    font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-size: 20px;
   }
@@ -583,11 +689,6 @@ Large devices (1024px and larger)
 
   h2.cache {
     font-size: 28px;
-  }
-
-  .cache-logo-banner {
-    display: grid;
-    justify-content: center;
   }
 
   .cache-banner {
@@ -686,6 +787,10 @@ Large devices (1024px and larger)
     padding-top: 90px
   }
 
+  .cache-gifs {
+    max-width: 320px;
+    padding-bottom: 60px;
+  }
   .col-lg-6 {
     width: 50%;
   }
@@ -693,6 +798,35 @@ Large devices (1024px and larger)
   [class*="col-lg-"] {
     float: left;
     padding: 0 10px;
+  }
+
+/* ===== LookBook ==============*/
+
+  #lookbook-user-flow {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lookbook-section-text {
+    font-size: 24px;
+  }
+
+  .lookbook-logo-banner {
+    max-width: 348px;
+  }
+
+  .lookbook-gif {
+    max-width: 320px;
+    padding-bottom: 75px;
+  }
+
+ .lookbook-fonts-image, .lookbook-iconography-image {
+    padding-top: 100px;
+  }
+
+  #lookbook-4-size-screen-mockup, #lookbook-live-mockup {
+    padding-top: 100px;
   }
 
   /* About */
@@ -733,5 +867,4 @@ Large devices (1024px and larger)
     clear: both;
     display: table;
   }
-
 }
