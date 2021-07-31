@@ -277,9 +277,9 @@ img {
 }
 
 .cache-logo-banner {
+  max-width: 190px;
   padding-top: 50px;
   padding-bottom: 35px;
-  max-width: 234px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -289,6 +289,9 @@ img {
   grid-template-columns: auto auto;
   grid-gap: 35px;
   padding-bottom: 15px;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cache-final-screens {
@@ -692,9 +695,13 @@ Large devices (1024px and larger)
     font-size: 28px;
   }
 
+  .cache-logo-banner {
+    max-width: 234px;
+  }
+
   .cache-banner {
     margin-top: 50px;
-  }
+}
 
   .cache-overview-grid-container {
     display: grid;
