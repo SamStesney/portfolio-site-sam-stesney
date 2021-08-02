@@ -691,6 +691,10 @@ Large devices (1024px and larger)
     font-size: 28px;
   }
 
+  #cache-logo-banner {
+    max-width: 235px;
+  }
+
   .cache-banner {
     margin-top: 50px;
   }
