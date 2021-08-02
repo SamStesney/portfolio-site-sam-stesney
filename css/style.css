@@ -93,7 +93,6 @@ main {
 nav>ul {
   list-style-type: none;
   padding: 0;
-  color: black;
 }
 
 nav>ul>li>a {
@@ -101,6 +100,7 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+  color: black;
 }
 
 nav>ul>li>a:visited {
