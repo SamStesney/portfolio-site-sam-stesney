@@ -276,20 +276,18 @@ img {
   margin: 25px 0;
 }
 
-#cache-logo-banner {
-  max-width: 190px;
-  padding-top: 50px;
-  padding-bottom: 35px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .cache-screens-grid-container {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 35px;
   padding-bottom: 15px;
   max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cache-logo-banner {
+  max-width: 191px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -698,10 +696,9 @@ Large devices (1024px and larger)
   #cache-logo-banner {
     max-width: 234px;
   }
-
   .cache-banner {
     margin-top: 50px;
-}
+  }
 
   .cache-overview-grid-container {
     display: grid;
