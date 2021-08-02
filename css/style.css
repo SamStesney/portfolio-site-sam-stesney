@@ -93,6 +93,7 @@ main {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  color: black;
 }
 
 nav>ul>li>a {
