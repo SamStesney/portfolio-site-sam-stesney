@@ -276,7 +276,7 @@ img {
   margin: 25px 0;
 }
 
-.cache-logo-banner {
+#cache-logo-banner {
   max-width: 190px;
   padding-top: 50px;
   padding-bottom: 35px;
@@ -695,7 +695,7 @@ Large devices (1024px and larger)
     font-size: 28px;
   }
 
-  .cache-logo-banner {
+  #cache-logo-banner {
     max-width: 234px;
   }
 
